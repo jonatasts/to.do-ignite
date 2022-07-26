@@ -11,6 +11,7 @@ export function TodoInput({ addTask }: TodoInputProps) {
 
   function handleAddNewTask() {
     addTask(task);
+    setTask("");
   }
 
   return (

@@ -47,18 +47,21 @@ export function TasksList({
                 style={styles.taskButton}
                 onPress={() => toggleTaskDone(item.id)}
               >
-                <View
-                  testID={`marker-${index}`}
-                  //TODO - use style prop
-                >
-                  {item.done && <Icon name="check" size={12} color="#8257E5" />}
+                <View testID={`marker-${index}`}>
+                  {item.done ? (
+                    <View style={styles.taskMarkerDone}>
+                      <Icon name="check" size={12} color="#FFF" />
+                    </View>
+                  ) : (
+                    <View style={styles.taskMarker}></View>
+                  )}
                 </View>
 
-                <Text
-                //TODO - use style prop
-                >
-                  {item.title}
-                </Text>
+                {item.done ? (
+                  <Text style={styles.taskTextDone}>{item.title}</Text>
+                ) : (
+                  <Text style={styles.taskText}>{item.title}</Text>
+                )}
               </TouchableOpacity>
             </View>
 
