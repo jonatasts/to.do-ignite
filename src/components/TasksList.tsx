@@ -51,7 +51,7 @@ export function TasksList({
                   testID={`marker-${index}`}
                   //TODO - use style prop
                 >
-                  {item.done && <Icon name="check" size={12} color="#FFF" />}
+                  {item.done && <Icon name="check" size={12} color="#8257E5" />}
                 </View>
 
                 <Text
