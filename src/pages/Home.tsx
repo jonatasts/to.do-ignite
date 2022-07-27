@@ -19,13 +19,13 @@ export function Home() {
   }
 
   function handleToggleTaskDone(id: number) {
-    const updatedTasks = tasks.map((task) => {
-      if (task.id === id) {
-        task.done = !task.done;
-      }
+    const updatedTasks = tasks.map((task) => ({ ...task }));
 
-      return task;
-    });
+    const foundItem = updatedTasks.find((task) => task.id === id);
+
+    if (foundItem) {
+      foundItem.done = !foundItem.done;
+    }
 
     setTasks(updatedTasks);
   }
