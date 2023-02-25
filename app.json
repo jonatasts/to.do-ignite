@@ -1,4 +1,10 @@
 {
-  "name": "todo",
-  "displayName": "todo"
+  "expo": {
+    "name": "to-do-ignite",
+    "slug": "to-do-ignite",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
 }
