@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "to-do-ignite",
-    "slug": "to-do-ignite",
+    "name": "To do",
+    "slug": "to-do",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
