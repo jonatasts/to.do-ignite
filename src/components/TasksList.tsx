@@ -1,17 +1,11 @@
 import React from "react";
 import {
   FlatList,
-  Image,
-  TouchableOpacity,
-  View,
-  Text,
   StyleSheet,
 } from "react-native";
-import Icon from "react-native-vector-icons/Feather";
 
 import { ItemWrapper } from "./ItemWrapper";
 
-import trashIcon from "../assets/icons/trash/trash.png";
 import { TaskItem } from "./TaskItem";
 
 export interface Task {
