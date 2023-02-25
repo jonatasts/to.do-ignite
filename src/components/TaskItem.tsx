@@ -63,7 +63,7 @@ export function TaskItem({
           style={task.done ? styles.taskMarkerDone : styles.taskMarker}
           onPress={toggleTaskDone}
         >
-          {task.done && <Icon name="check" size={12} color="#FFF" />}
+          {task.done && <Icon name="check" size={15} color="#FFF" />}
         </TouchableOpacity>
 
         <TextInput
@@ -117,8 +117,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   taskMarker: {
-    height: 16,
-    width: 16,
+    height: 20,
+    width: 20,
     borderRadius: 4,
     borderWidth: 1,
     borderColor: "#B2B2B2",
@@ -131,8 +131,8 @@ const styles = StyleSheet.create({
     fontFamily: "Inter_500Medium",
   },
   taskMarkerDone: {
-    height: 16,
-    width: 16,
+    height: 20,
+    width: 20,
     borderRadius: 4,
     backgroundColor: "#1DB863",
     marginRight: 15,
