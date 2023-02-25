@@ -42,11 +42,11 @@ const styles = StyleSheet.create({
   tasksCounter: {
     fontSize: 15,
     color: "#FFF",
-    fontFamily: "Inter-Regular",
+    fontFamily: "Inter_400Regular",
   },
   tasksCounterBold: {
     fontSize: 15,
     color: "#FFF",
-    fontFamily: "Inter-Bold",
+    fontFamily: "Inter_700Bold",
   },
 });
