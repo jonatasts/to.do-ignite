@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
+import {
+  Keyboard,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import Icon from "react-native-vector-icons/Feather";
 
 interface TodoInputProps {
@@ -13,6 +19,7 @@ export function TodoInput({ addTask }: TodoInputProps) {
     if (task) {
       addTask(task);
       setTask("");
+      Keyboard.dismiss();
     }
   }
 
